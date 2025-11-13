@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  
+</head>
+<body>
+  <div class="container">
+    <h1>Task Manager For Report</h1>
+ 
+    <div class="task-input">
+      <input type="text" id="taskTitle" placeholder="Enter the task..." />
+            <input type="datetime-local" id="taskDate" />
+            
+      <button id="addTaskBtn">Add Task</button>
+    </div>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search the task..." />
+      <select id="filterSelect">
+        <option value="all">ALL</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+      </select>
+      <button id="sortBtn">Sort by Date</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
